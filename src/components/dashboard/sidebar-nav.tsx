@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Archive,
   BarChart3,
   LayoutDashboard,
   Settings,
   Users,
   Briefcase,
+  TrendingUp,
+  Megaphone,
+  Box,
+  Truck,
+  FileText,
+  Cog,
 } from "lucide-react";
 
 import {
@@ -30,29 +35,39 @@ export function SidebarNav() {
 
   const menuItems = [
     {
-      href: "/",
-      label: "Dashboard",
-      icon: LayoutDashboard,
+      href: "#",
+      label: "Vendor Management",
+      icon: Truck,
     },
     {
       href: "#",
-      label: "Reports",
+      label: "Financial Performance",
+      icon: TrendingUp,
+    },
+    {
+      href: "#",
+      label: "Sales & Growth",
       icon: BarChart3,
     },
     {
       href: "#",
-      label: "Vendors",
-      icon: Users,
+      label: "Marketing & Campaigns",
+      icon: Megaphone,
     },
     {
       href: "#",
-      label: "Inventory",
-      icon: Archive,
+      label: "Inventory & Logistics",
+      icon: Box,
     },
     {
       href: "#",
-      label: "Settings",
-      icon: Settings,
+      label: "Process Automation",
+      icon: Cog,
+    },
+    {
+      href: "/",
+      label: "Executive Reports",
+      icon: FileText,
     },
   ];
 

@@ -11,6 +11,7 @@ import { MarketingRoiChart } from "./marketing-roi-chart";
 import { NetProfitMarginChart } from "./net-profit-margin-chart";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const fluctuate = (value: number, percent: number) => {
   const amount = value * (percent / 100);
@@ -64,7 +65,10 @@ export function Dashboard() {
   return (
     <div className="flex-1 space-y-6 p-4 md:p-8">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+        <div className="flex items-center gap-2">
+          <SidebarTrigger className="md:hidden" />
+          <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+        </div>
         <div className="flex items-center space-x-2">
           <Button variant="outline">
             <Download className="mr-2 h-4 w-4" />
