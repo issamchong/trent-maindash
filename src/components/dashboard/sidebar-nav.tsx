@@ -55,7 +55,7 @@ export function SidebarNav() {
       icon: Megaphone,
     },
     {
-      href: "https://vercel.com/issams-projects-3e591a91/trent-inventorydash",
+      href: "https://trent-inventorydash.vercel.app/",
       label: "Inventory & Logistics",
       icon: Box,
     },
