@@ -35,7 +35,7 @@ export function SidebarNav() {
 
   const menuItems = [
     {
-      href: "#",
+      href: "https://trent-vendormanagement.vercel.app/",
       label: "Vendor Management",
       icon: Truck,
     },
@@ -83,7 +83,7 @@ export function SidebarNav() {
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.label}>
-              <Link href={item.href} passHref>
+              <Link href={item.href}>
                 <SidebarMenuButton
                   isActive={pathname === item.href && item.href === '/'}
                   tooltip={item.label}
