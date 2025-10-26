@@ -40,7 +40,7 @@ export function SidebarNav() {
       icon: Truck,
     },
     {
-      href: "#",
+      href: "https://trent-financial-report.vercel.app/",
       label: "Financial Performance",
       icon: TrendingUp,
     },
